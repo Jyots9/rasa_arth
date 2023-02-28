@@ -1,0 +1,152 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - lets go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I dont think so
+    - dont like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?    
+    
+- intent: operation
+  examples: |
+    - Perform mathematical operations
+    - Perform arithmetic operations
+    - Can you perform mathematical operations
+    - I want to perform mathematical operations
+    - I need to perform mathematical operations
+    - I want to perform arithematic operations
+    - I want you to do mathematical operations
+    - I want you to do arithmetic operations
+    
+- intent:Thank
+  examples : |
+     -Thanks
+     -Thank you
+     -Thank you so much
+     -Thanks bot
+     -Thanks for that
+     -cheers
+     
+- intent:add
+  examples : |
+     -Can you perform Addition
+     -Can you add two numbers
+     -Addition
+     -Add 
+     -Sum
+     -Summation
+     
+- intent:sub
+  examples : |
+     -Subtraction
+     -Can you perform Subtraction
+     -Can you find the difference between two numbers
+     -Sub
+     -Difference
+     -Subtract
+     
+- intent:mul
+  examples : |
+     -Multiplication
+     -Can you perform Multiplication
+     -Can you multiply two numbers
+     -Multiply 
+     -Product
+     -Product of
+     
+- intent:div
+  examples : |
+     -Division
+     -Can you perform division operation
+     -Can you divide numbers
+     -Div
+     -divide
+     
+- intent: math_operation
+  examples: |
+    - What is {num1} plus {num2}?
+    - How much is {num1} divided by {num2}?
+    - {num1} {operation} {num2}

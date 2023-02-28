@@ -1,0 +1,69 @@
+slots:
+  num1:
+    type: float
+    mappings:
+      - type: from_entity
+        entity: num1
+  num2:
+    type: float
+    mappings:
+      - type: from_entity
+        entity: num2
+  operation:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: operation
+
+
+intents:
+  - greet
+  - goodbye
+  - thanks
+  - deny
+  - affirm
+  - calculate
+  - math_operation
+
+entities:
+  - num1
+  - num2
+  - operation
+
+responses:
+  utter_greet:
+    - text: "Hi! How can I assist you?"
+  utter_goodbye:
+    - text: "Goodbye, have a nice day!"
+  utter_thanks:
+    - text: "You're welcome!"
+  utter_deny:
+    - text: "Ok, let me know if you need anything else."
+  utter_affirm:
+    - text: "Great!"
+  utter_number1:
+    - text: "Enter the first number."
+  utter_number2:
+    - text: "Enter the second number."
+  utter_operation:
+    - text: "What operation would you like to perform? Choose from the following options."
+      buttons:
+        - title: "Addition"
+          payload: "/add"
+        - title: "Subtraction"
+          payload: "/sub"
+        - title: "Division"
+          payload: "/div"
+        - title: "Multiplication"
+          payload: "/mul"
+  utter_calculate:
+    - text: "The result is: {result}"
+  utter_iamabot:
+    - text: "I am a bot. How can I assist you?"
+
+actions:
+  - calculate
+
+templates:
+  utter_ask_continue:
+    - text: "Do you want to continue? (yes / no)"
